@@ -1,4 +1,4 @@
-'fun begins here'
+'oop fun begins here'
 class User:
     def log(self):
         print('i am a customer')
