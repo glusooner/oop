@@ -20,20 +20,12 @@ class Ref_prod(Ref):
         print('here is proc to pull prod hierarchy')
     def push(self):
         print('here is proc to push prod hierarchy')
-r0 = Ref('parent')
-r0.pull()
-r0.push()
-print(r0.conn)
-print(r0.name)
 
+
+r0 = Ref('parent')
 r1 = Ref_port('port')
-r1.pull()
-r1.push()
-print(r1.conn)
-print(r1.name)
 r2 = Ref_prod('prod')
-r2.conn
-r2.pull()
-r2.push()
-print(r2.conn)
-print(r2.name)
+
+rl =[r0,r1,r2]
+
+[r.pull() for r in rl]
